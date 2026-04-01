@@ -1,4 +1,46 @@
+.header-container {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px;
+    text-align: center;
 
+    /* Sombras para efecto más orgánico */
+    box-shadow: 
+        0 0 20px rgba(0, 0, 0, 0.2),
+        10px 10px 0px rgba(76, 175, 80, 0.4),
+        -10px -10px 0px rgba(76, 175, 80, 0.3);
+
+    /* Opcional: un poco de transformación */
+
+    display: inline-block;
+}
+
+.header{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.main-header{
+    font-family: "Lobster Two", sans-serif;
+}
+
+p{
+    font-family: "Special Gothic", sans-serif;
+}
+
+.footer {
+    background-color: #4CAF50;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+     box-shadow: 
+        0 0 20px rgba(0, 0, 0, 0.2),
+        10px 10px 0px rgba(76, 175, 80, 0.4),
+        -10px -10px 0px rgba(76, 175, 80, 0.3);
+}
 
 body{margin-top:20px;}
 
