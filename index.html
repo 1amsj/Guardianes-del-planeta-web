@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src = "script.js"></script>
     <!-- Google Fonts for Pixel Art Feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -272,57 +273,64 @@
     </section>
 
     <!-- FORMULARIO DE SOLICITUD DE DEMO COMPLETA -->
-    <section id="solicitar-demo" class="py-16 bg-slate-950 border-t-4 border-slate-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="pixel-card p-8 bg-slate-900 border-4 border-amber-500">
-                <div class="text-center mb-8">
-                    <span class="font-pixel text-xs text-amber-400 bg-amber-950 px-3 py-1 border border-amber-600">ACCESO DOCENTE & INSTITUCIONAL</span>
-                    <h2 class="text-2xl sm:text-3xl font-pixel text-white mt-4 mb-2">SOLICITAR DEMO COMPLETA Y BETA</h2>
-                    <p class="text-slate-400 font-retro text-xl">¿Eres docente o director escolar? Solicita acceso gratuito para tu aula.</p>
-                </div>
+<section id="solicitar-demo" class="py-16 bg-slate-950 border-t-4 border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="pixel-card p-8 bg-slate-900 border-4 border-amber-500">
+            <div class="text-center mb-8">
+                <span class="font-pixel text-xs text-amber-400 bg-amber-950 px-3 py-1 border border-amber-600">ACCESO DOCENTE & INSTITUCIONAL</span>
+                <h2 class="text-2xl sm:text-3xl font-pixel text-white mt-4 mb-2">SOLICITAR DEMO COMPLETA Y BETA</h2>
+                <p class="text-slate-400 font-retro text-xl">¿Eres docente o director escolar? Solicita acceso gratuito para tu aula.</p>
+            </div>
 
-                <form onsubmit="handleDemoRequest(event)" class="space-y-4 font-sans text-sm">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block font-pixel text-[10px] text-amber-300 mb-2">NOMBRE DEL DOCENTE / REPRESENTANTE</label>
-                            <input type="text" required placeholder="Ej. Prof. María Gómez" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
-                        </div>
-                        <div>
-                            <label class="block font-pixel text-[10px] text-amber-300 mb-2">CORREO ELECTRÓNICO</label>
-                            <input type="email" required placeholder="ejemplo@escuela.edu" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block font-pixel text-[10px] text-amber-300 mb-2">INSTITUCIÓN EDUCATIVA / COLEGIO</label>
-                            <input type="text" required placeholder="Ej. Colegio San Martín" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
-                        </div>
-                        <div>
-                            <label class="block font-pixel text-[10px] text-amber-300 mb-2">CANTIDAD DE ESTUDIANTES</label>
-                            <select class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
-                                <option>1 - 30 alumnos</option>
-                                <option>31 - 100 alumnos</option>
-                                <option>100+ alumnos</option>
-                            </select>
-                        </div>
-                    </div>
-
+            <!-- CAMBIO AQUÍ: id="demoForm" y action con tu ID de Formspree -->
+            <form id="demoForm" action="https://formspree.io/f/xwllzzly" method="POST" onsubmit="handleDemoRequest(event)" class="space-y-4 font-sans text-sm">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block font-pixel text-[10px] text-amber-300 mb-2">MENSAJE O COMENTARIOS ADICIONALES</label>
-                        <textarea rows="3" placeholder="Nos gustaría implementar Guardianes GDP en 4to grado..." class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"></textarea>
+                        <label class="block font-pixel text-[10px] text-amber-300 mb-2">NOMBRE DEL DOCENTE / REPRESENTANTE</label>
+                        <!-- Se agregó name="nombre" -->
+                        <input type="text" name="nombre" required placeholder="Ej. Prof. María Gómez" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
                     </div>
-
-                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-pixel text-xs py-4 border-2 border-white shadow-[4px_4px_0px_#000] transition-all">
-                        🚀 ENVIAR SOLICITUD DE DEMO
-                    </button>
-                </form>
-                <div id="demo-success" class="hidden text-center mt-4 p-4 bg-emerald-950 border-2 border-emerald-400 text-emerald-300 font-pixel text-xs">
-                    ¡SOLICITUD ENVIADA CON ÉXITO! El equipo de Guardianes GDP te contactará pronto.
+                    <div>
+                        <label class="block font-pixel text-[10px] text-amber-300 mb-2">CORREO ELECTRÓNICO</label>
+                        <!-- Se agregó name="email" -->
+                        <input type="email" name="email" required placeholder="ejemplo@escuela.edu" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
+                    </div>
                 </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-pixel text-[10px] text-amber-300 mb-2">INSTITUCIÓN EDUCATIVA / COLEGIO</label>
+                        <!-- Se agregó name="institucion" -->
+                        <input type="text" name="institucion" required placeholder="Ej. Colegio San Martín" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
+                    </div>
+                    <div>
+                        <label class="block font-pixel text-[10px] text-amber-300 mb-2">CANTIDAD DE ESTUDIANTES</label>
+                        <!-- Se agregó name="alumnos" -->
+                        <select name="alumnos" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
+                            <option>1 - 30 alumnos</option>
+                            <option>31 - 100 alumnos</option>
+                            <option>100+ alumnos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-pixel text-[10px] text-amber-300 mb-2">MENSAJE O COMENTARIOS ADICIONALES</label>
+                    <!-- Se agregó name="mensaje" -->
+                    <textarea name="mensaje" rows="3" placeholder="Nos gustaría implementar Guardianes GDP en 4to grado..." class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-pixel text-xs py-4 border-2 border-white shadow-[4px_4px_0px_#000] transition-all">
+                    🚀 ENVIAR SOLICITUD DE DEMO
+                </button>
+            </form>
+
+            <div id="demo-success" class="hidden text-center mt-4 p-4 bg-emerald-950 border-2 border-emerald-400 text-emerald-300 font-pixel text-xs">
+                ¡SOLICITUD ENVIADA CON ÉXITO! El equipo de Guardianes GDP te contactará pronto.
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ODS 12 SECTION -->
     <section id="ods12" class="py-16 bg-slate-900 border-t-4 border-b-4 border-slate-800">
