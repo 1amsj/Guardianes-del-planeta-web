@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src = "script.js"></script>
+    <script src="script.js"></script>
     <!-- Google Fonts for Pixel Art Feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Fredoka:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Fredoka:wght@400;600;700&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
@@ -48,25 +51,35 @@
             color: #e2e8f0;
             image-rendering: pixelated;
         }
-        .font-pixel { font-family: 'Press Start 2P', cursive; }
-        .font-retro { font-family: 'VT323', monospace; }
+
+        .font-pixel {
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        .font-retro {
+            font-family: 'VT323', monospace;
+        }
+
         .pixel-border {
-            box-shadow: 
+            box-shadow:
                 -4px 0 0 0 #000,
                 4px 0 0 0 #000,
                 0 -4px 0 0 #000,
                 0 4px 0 0 #000;
         }
+
         .pixel-card {
             background: #1e293b;
             border: 4px solid #334155;
             box-shadow: 6px 6px 0px #020617;
         }
+
         .pixel-btn {
-            box-shadow: inset -4px -4px 0px rgba(0,0,0,0.4), inset 4px 4px 0px rgba(255,255,255,0.4);
+            box-shadow: inset -4px -4px 0px rgba(0, 0, 0, 0.4), inset 4px 4px 0px rgba(255, 255, 255, 0.4);
         }
     </style>
 </head>
+
 <body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col">
 
     <!-- Header Navigation Pixel Style -->
@@ -75,19 +88,23 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <a href="#" class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-emerald-500 border-2 border-white flex items-center justify-center text-slate-900 font-pixel text-xl shadow-[3px_3px_0px_#000]">
+                    <div
+                        class="w-12 h-12 bg-emerald-500 border-2 border-white flex items-center justify-center text-slate-900 font-pixel text-xl shadow-[3px_3px_0px_#000]">
                         🌎
                     </div>
                     <div>
-                        <span class="text-xl sm:text-2xl font-pixel text-emerald-400 tracking-wider">GUARDIANES GDP</span>
-                        <span class="block text-xs font-retro text-amber-400 tracking-widest uppercase">ODS 12 - EDICIÓN PIXEL ART</span>
+                        <span class="text-xl sm:text-2xl font-pixel text-emerald-400 tracking-wider">GUARDIANES
+                            GDP</span>
+                        <span class="block text-xs font-retro text-amber-400 tracking-widest uppercase">ODS 12 - EDICIÓN
+                            PIXEL ART</span>
                     </div>
                 </a>
 
                 <!-- Navigation -->
                 <nav class="hidden md:flex items-center gap-6 font-retro text-xl">
                     <a href="#ods12" class="hover:text-emerald-400 transition-colors">ODS 12</a>
-                    <a href="#demo" class="hover:text-emerald-400 text-amber-300 font-bold transition-colors">🎮 JUGAR NIVEL 1</a>
+                    <a href="#demo" class="hover:text-emerald-400 text-amber-300 font-bold transition-colors">🎮 JUGAR
+                        NIVEL 1</a>
                     <a href="#simulador" class="hover:text-emerald-400 transition-colors">EXPLORAR 6 NIVELES</a>
                     <a href="#equipo" class="hover:text-emerald-400 transition-colors">EQUIPO</a>
                     <a href="#solicitar-demo" class="hover:text-emerald-400 transition-colors">SOLICITAR DEMO</a>
@@ -101,25 +118,30 @@
     <section class="py-12 md:py-20 bg-slate-900 relative border-b-4 border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                
+
                 <div class="lg:col-span-7 text-center lg:text-left">
-                    <div class="inline-block bg-amber-500/20 text-amber-300 border-2 border-amber-400 px-3 py-1 font-retro text-lg mb-4">
+                    <div
+                        class="inline-block bg-amber-500/20 text-amber-300 border-2 border-amber-400 px-3 py-1 font-retro text-lg mb-4">
                         ★ VIDEOJUEGO EDUCATIVO RETRO PARA NIÑOS (6-12 AÑOS)
                     </div>
-                    
+
                     <h1 class="text-2xl sm:text-4xl lg:text-5xl font-pixel text-emerald-400 leading-snug mb-6">
                         SALVA EL PLANETA UN PIXEL A LA VEZ.
                     </h1>
-                    
+
                     <p class="text-slate-300 text-base sm:text-lg mb-8 leading-relaxed font-sans max-w-2xl">
-                        Aprende sobre consumo responsable y sostenibilidad ambiental guiando a nuestros héroes en 6 desafiantes niveles interactivos inspirados en el <strong>Objetivo de Desarrollo Sostenible 12 (ODS 12)</strong>.
+                        Aprende sobre consumo responsable y sostenibilidad ambiental guiando a nuestros héroes en 6
+                        desafiantes niveles interactivos inspirados en el <strong>Objetivo de Desarrollo Sostenible 12
+                            (ODS 12)</strong>.
                     </p>
 
                     <div class="flex flex-wrap gap-4 justify-center lg:justify-start font-pixel text-xs">
-                        <a href="#demo" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-4 border-2 border-white shadow-[4px_4px_0px_#000] flex items-center gap-2">
+                        <a href="#demo"
+                            class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 px-6 py-4 border-2 border-white shadow-[4px_4px_0px_#000] flex items-center gap-2">
                             🎮 JUGAR NIVEL 1
                         </a>
-                        <a href="#solicitar-demo" class="bg-amber-500 hover:bg-amber-400 text-slate-950 px-6 py-4 border-2 border-white shadow-[4px_4px_0px_#000] flex items-center gap-2">
+                        <a href="#solicitar-demo"
+                            class="bg-amber-500 hover:bg-amber-400 text-slate-950 px-6 py-4 border-2 border-white shadow-[4px_4px_0px_#000] flex items-center gap-2">
                             📩 SOLICITAR DEMO COMPLETA
                         </a>
                     </div>
@@ -132,14 +154,18 @@
                             <span id="game-status" class="text-amber-400">¡HAZ CLIC EN UN RESIDUO!</span>
                             <span id="game-score" class="text-emerald-400 font-bold">ECO PUNTOS: 0</span>
                         </div>
-                        
-                        <div class="relative aspect-[4/3] w-full overflow-hidden border-2 border-slate-700 bg-slate-900">
-                            <canvas id="pixelCanvas" width="800" height="450" class="w-full h-full cursor-pointer"></canvas>
+
+                        <div
+                            class="relative aspect-[4/3] w-full overflow-hidden border-2 border-slate-700 bg-slate-900">
+                            <canvas id="pixelCanvas" width="800" height="450"
+                                class="w-full h-full cursor-pointer"></canvas>
                         </div>
-                        
+
                         <div class="mt-3 flex justify-between items-center">
-                            <p class="font-retro text-sm text-slate-400">💡 Arrastra/selecciona el residuo y luego su contenedor.</p>
-                            <button onclick="resetPixelGame()" class="bg-slate-800 hover:bg-slate-700 text-amber-400 text-[10px] font-pixel px-3 py-1.5 border border-amber-400">REINICIAR</button>
+                            <p class="font-retro text-sm text-slate-400">💡 Arrastra/selecciona el residuo y luego su
+                                contenedor.</p>
+                            <button onclick="resetPixelGame()"
+                                class="bg-slate-800 hover:bg-slate-700 text-amber-400 text-[10px] font-pixel px-3 py-1.5 border border-amber-400">REINICIAR</button>
                         </div>
                     </div>
                 </div>
@@ -152,31 +178,50 @@
     <section id="simulador" class="py-16 bg-slate-900 border-t-4 border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8">
-                <span class="font-pixel text-xs text-emerald-400 bg-emerald-950 px-3 py-1 border border-emerald-600">SIMULADOR INTERACTIVO</span>
+                <span
+                    class="font-pixel text-xs text-emerald-400 bg-emerald-950 px-3 py-1 border border-emerald-600">SIMULADOR
+                    INTERACTIVO</span>
                 <h2 class="text-2xl sm:text-4xl font-pixel text-white mt-4 mb-2">EXPLORA LOS 6 NIVELES DEL JUEGO</h2>
-                <p class="text-slate-400 font-retro text-xl">Selecciona una pestaña para probar las mecánicas pedagógicas de cada nivel</p>
+                <p class="text-slate-400 font-retro text-xl">Selecciona una pestaña para probar las mecánicas
+                    pedagógicas de cada nivel</p>
             </div>
 
             <!-- Tabs Header -->
             <div class="flex flex-wrap gap-2 justify-center mb-6 font-pixel text-[10px] sm:text-xs">
-                <button onclick="switchTab(1)" id="tab-btn-1" class="tab-btn bg-emerald-600 text-white px-4 py-3 border-2 border-white shadow-[3px_3px_0px_#000]">N1: RESIDUOS</button>
-                <button onclick="switchTab(2)" id="tab-btn-2" class="tab-btn bg-slate-800 text-slate-400 px-4 py-3 border-2 border-slate-700 hover:text-white">N2: DECISIONES</button>
-                <button onclick="switchTab(3)" id="tab-btn-3" class="tab-btn bg-slate-800 text-slate-400 px-4 py-3 border-2 border-slate-700 hover:text-white">N3: LIMPIAR LAGO</button>
-                <button onclick="switchTab(4)" id="tab-btn-4" class="tab-btn bg-slate-800 text-slate-400 px-4 py-3 border-2 border-slate-700 hover:text-white">N4: UPCYCLING</button>
-                <button onclick="switchTab(5)" id="tab-btn-5" class="tab-btn bg-slate-800 text-slate-400 px-4 py-3 border-2 border-slate-700 hover:text-white">N5: ECO-PALABRAS</button>
-                <button onclick="switchTab(6)" id="tab-btn-6" class="tab-btn bg-slate-800 text-slate-400 px-4 py-3 border-2 border-slate-700 hover:text-white">N6: ENERGÍA ECO</button>
+                <button onclick="switchTab(1)" id="tab-btn-1"
+                    class="tab-btn bg-emerald-600 text-white px-4 py-3 border-2 border-white shadow-[3px_3px_0px_#000]">N1:
+                    RESIDUOS</button>
+                <button onclick="switchTab(2)" id="tab-btn-2"
+                    class="tab-btn bg-slate-800 text-slate-400 px-4 py-3 border-2 border-slate-700 hover:text-white">N2:
+                    DECISIONES</button>
+                <button onclick="switchTab(3)" id="tab-btn-3"
+                    class="tab-btn bg-slate-800 text-slate-400 px-4 py-3 border-2 border-slate-700 hover:text-white">N3:
+                    LIMPIAR LAGO</button>
+                <button onclick="switchTab(4)" id="tab-btn-4"
+                    class="tab-btn bg-slate-800 text-slate-400 px-4 py-3 border-2 border-slate-700 hover:text-white">N4:
+                    UPCYCLING</button>
+                <button onclick="switchTab(5)" id="tab-btn-5"
+                    class="tab-btn bg-slate-800 text-slate-400 px-4 py-3 border-2 border-slate-700 hover:text-white">N5:
+                    ECO-PALABRAS</button>
+                <button onclick="switchTab(6)" id="tab-btn-6"
+                    class="tab-btn bg-slate-800 text-slate-400 px-4 py-3 border-2 border-slate-700 hover:text-white">N6:
+                    ENERGÍA ECO</button>
             </div>
 
             <!-- Tab Content Display Area -->
-            <div class="pixel-card p-6 bg-slate-950 border-4 border-slate-700 min-h-[350px] flex items-center justify-center">
-                
+            <div
+                class="pixel-card p-6 bg-slate-950 border-4 border-slate-700 min-h-[350px] flex items-center justify-center">
+
                 <!-- Tab 1 -->
                 <div id="tab-content-1" class="tab-content w-full">
                     <div class="text-center max-w-xl mx-auto">
                         <div class="text-4xl mb-3">♻️</div>
                         <h3 class="font-pixel text-emerald-400 text-lg mb-2">NIVEL 1: CLASIFICACIÓN DE RESIDUOS</h3>
-                        <p class="text-slate-300 mb-6 font-sans text-sm">Aprende a separar botellas de vidrio, plástico, papel y orgánicos. ¡Prueba la versión Canvas jugable arriba en la demo principal!</p>
-                        <a href="#demo" class="inline-block bg-emerald-500 text-slate-950 font-pixel text-xs px-4 py-3 border-2 border-white shadow-[4px_4px_0px_#000]">IR AL ARCADE NIVEL 1 🎮</a>
+                        <p class="text-slate-300 mb-6 font-sans text-sm">Aprende a separar botellas de vidrio, plástico,
+                            papel y orgánicos. ¡Prueba la versión Canvas jugable arriba en la demo principal!</p>
+                        <a href="#demo"
+                            class="inline-block bg-emerald-500 text-slate-950 font-pixel text-xs px-4 py-3 border-2 border-white shadow-[4px_4px_0px_#000]">IR
+                            AL ARCADE NIVEL 1 🎮</a>
                     </div>
                 </div>
 
@@ -185,11 +230,16 @@
                     <span class="font-pixel text-xs text-amber-400">NIVEL 2: DECISIONES SOSTENIBLES</span>
                     <h3 class="font-pixel text-white text-base mt-2 mb-4">¿ES UNA BUENA O MALA ACCIÓN?</h3>
                     <div id="n2-card" class="bg-slate-900 border-2 border-amber-500 p-6 mb-4">
-                        <p id="n2-text" class="font-retro text-2xl text-amber-300">"Dejar el grifo abierto mientras te cepillas los dientes."</p>
+                        <p id="n2-text" class="font-retro text-2xl text-amber-300">"Dejar el grifo abierto mientras te
+                            cepillas los dientes."</p>
                     </div>
                     <div class="flex justify-center gap-4 font-pixel text-xs">
-                        <button onclick="checkN2(false)" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-3 border-2 border-white shadow-[3px_3px_0px_#000]">👍 BUENA ACCIÓN</button>
-                        <button onclick="checkN2(true)" class="bg-rose-600 hover:bg-rose-500 text-white px-5 py-3 border-2 border-white shadow-[3px_3px_0px_#000]">👎 MALA ACCIÓN</button>
+                        <button onclick="checkN2(false)"
+                            class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-3 border-2 border-white shadow-[3px_3px_0px_#000]">👍
+                            BUENA ACCIÓN</button>
+                        <button onclick="checkN2(true)"
+                            class="bg-rose-600 hover:bg-rose-500 text-white px-5 py-3 border-2 border-white shadow-[3px_3px_0px_#000]">👎
+                            MALA ACCIÓN</button>
                     </div>
                     <p id="n2-feedback" class="font-retro text-xl text-emerald-400 mt-4 min-h-[28px]"></p>
                 </div>
@@ -198,16 +248,29 @@
                 <div id="tab-content-3" class="tab-content hidden w-full max-w-xl mx-auto text-center">
                     <span class="font-pixel text-xs text-sky-400">NIVEL 3: RECTITUD Y PRECISIÓN</span>
                     <h3 class="font-pixel text-white text-base mt-2 mb-4">LIMPIEZA DEL LAGO CON CAÑA DE PESCAR</h3>
-                    <div class="bg-sky-950 border-4 border-sky-600 p-6 relative overflow-hidden h-48 flex flex-col justify-between items-center">
-                        <div class="text-xs font-pixel text-sky-300">LAGO LIMPIO: <span id="lake-clean">0</span>/5 RESIDUOS</div>
+                    <div
+                        class="bg-sky-950 border-4 border-sky-600 p-6 relative overflow-hidden h-48 flex flex-col justify-between items-center">
+                        <div class="text-xs font-pixel text-sky-300">LAGO LIMPIO: <span id="lake-clean">0</span>/5
+                            RESIDUOS</div>
                         <div id="lake-area" class="flex gap-6 text-3xl my-auto">
-                            <span onclick="cleanLakeItem(this)" class="cursor-pointer hover:scale-125 transition-transform" title="Pescar lata">🥫</span>
-                            <span onclick="cleanLakeItem(this)" class="cursor-pointer hover:scale-125 transition-transform" title="Pescar bolsa">🛍️</span>
-                            <span onclick="cleanLakeItem(this)" class="cursor-pointer hover:scale-125 transition-transform" title="Pescar llanta">🛞</span>
-                            <span onclick="cleanLakeItem(this)" class="cursor-pointer hover:scale-125 transition-transform" title="Pescar botella">🍾</span>
-                            <span onclick="cleanLakeItem(this)" class="cursor-pointer hover:scale-125 transition-transform" title="Pescar plástico">🥤</span>
+                            <span onclick="cleanLakeItem(this)"
+                                class="cursor-pointer hover:scale-125 transition-transform"
+                                title="Pescar lata">🥫</span>
+                            <span onclick="cleanLakeItem(this)"
+                                class="cursor-pointer hover:scale-125 transition-transform"
+                                title="Pescar bolsa">🛍️</span>
+                            <span onclick="cleanLakeItem(this)"
+                                class="cursor-pointer hover:scale-125 transition-transform"
+                                title="Pescar llanta">🛞</span>
+                            <span onclick="cleanLakeItem(this)"
+                                class="cursor-pointer hover:scale-125 transition-transform"
+                                title="Pescar botella">🍾</span>
+                            <span onclick="cleanLakeItem(this)"
+                                class="cursor-pointer hover:scale-125 transition-transform"
+                                title="Pescar plástico">🥤</span>
                         </div>
-                        <p class="text-xs font-retro text-sky-200">¡Haz clic en los residuos para pescarlos con la caña!</p>
+                        <p class="text-xs font-retro text-sky-200">¡Haz clic en los residuos para pescarlos con la caña!
+                        </p>
                     </div>
                 </div>
 
@@ -219,12 +282,14 @@
                         <div class="bg-slate-900 p-4 border-2 border-purple-500">
                             <div class="text-3xl mb-2">🍾</div>
                             <p class="font-pixel text-[10px] text-slate-300">BOTELLA DE PLÁSTICO</p>
-                            <button onclick="upcycleResult('🌱 ¡Se convirtió en una hermosa Maceta Colgante!')" class="mt-3 bg-purple-600 hover:bg-purple-500 text-white font-pixel text-[9px] px-3 py-2 border border-white">REUTILIZAR</button>
+                            <button onclick="upcycleResult('🌱 ¡Se convirtió en una hermosa Maceta Colgante!')"
+                                class="mt-3 bg-purple-600 hover:bg-purple-500 text-white font-pixel text-[9px] px-3 py-2 border border-white">REUTILIZAR</button>
                         </div>
                         <div class="bg-slate-900 p-4 border-2 border-purple-500">
                             <div class="text-3xl mb-2">📦</div>
                             <p class="font-pixel text-[10px] text-slate-300">CAJA DE CARTÓN</p>
-                            <button onclick="upcycleResult('🤖 ¡Se convirtió en un Juguete Robot Reciclado!')" class="mt-3 bg-purple-600 hover:bg-purple-500 text-white font-pixel text-[9px] px-3 py-2 border border-white">REUTILIZAR</button>
+                            <button onclick="upcycleResult('🤖 ¡Se convirtió en un Juguete Robot Reciclado!')"
+                                class="mt-3 bg-purple-600 hover:bg-purple-500 text-white font-pixel text-[9px] px-3 py-2 border border-white">REUTILIZAR</button>
                         </div>
                     </div>
                     <p id="upcycle-feedback" class="font-retro text-xl text-purple-300 mt-4 min-h-[28px]"></p>
@@ -245,8 +310,12 @@
                         <span class="bg-slate-800 border-2 border-amber-400 px-3 py-2">R</span>
                     </div>
                     <div class="flex justify-center gap-3 font-pixel text-xs">
-                        <button onclick="checkWord('L')" class="bg-amber-600 hover:bg-amber-500 text-slate-950 px-4 py-2 border border-white">LETRA 'L'</button>
-                        <button onclick="checkWord('C')" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 border border-slate-600">LETRA 'C'</button>
+                        <button onclick="checkWord('L')"
+                            class="bg-amber-600 hover:bg-amber-500 text-slate-950 px-4 py-2 border border-white">LETRA
+                            'L'</button>
+                        <button onclick="checkWord('C')"
+                            class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 border border-slate-600">LETRA
+                            'C'</button>
                     </div>
                     <p id="word-feedback" class="font-retro text-xl text-amber-300 mt-4 min-h-[28px]"></p>
                 </div>
@@ -256,10 +325,15 @@
                     <span class="font-pixel text-xs text-yellow-400">NIVEL 6: TRIVIA DE ENERGÍA</span>
                     <h3 class="font-pixel text-white text-base mt-2 mb-4">¡DA ENERGÍA SOLAR A LA CASA!</h3>
                     <div class="bg-slate-900 border-2 border-yellow-500 p-4 mb-4">
-                        <p class="font-retro text-2xl text-yellow-300 mb-2">¿Cuál es una fuente de energía renovable y limpia?</p>
+                        <p class="font-retro text-2xl text-yellow-300 mb-2">¿Cuál es una fuente de energía renovable y
+                            limpia?</p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 font-pixel text-[10px] mt-4">
-                            <button onclick="answerEnergy(true)" class="bg-amber-600 hover:bg-amber-500 text-slate-950 p-3 border border-white">☀️ ENERGÍA SOLAR</button>
-                            <button onclick="answerEnergy(false)" class="bg-slate-800 hover:bg-slate-700 text-white p-3 border border-slate-600">🛢️ PETRÓLEO</button>
+                            <button onclick="answerEnergy(true)"
+                                class="bg-amber-600 hover:bg-amber-500 text-slate-950 p-3 border border-white">☀️
+                                ENERGÍA SOLAR</button>
+                            <button onclick="answerEnergy(false)"
+                                class="bg-slate-800 hover:bg-slate-700 text-white p-3 border border-slate-600">🛢️
+                                PETRÓLEO</button>
                         </div>
                     </div>
                     <div class="flex items-center justify-center gap-2 font-pixel text-xs text-yellow-400">
@@ -275,95 +349,107 @@
     <!-- FORMULARIO DE SOLICITUD DE DEMO COMPLETA -->
 
 
-<form
-    id="formularioDocentes"
-    action="https://formspree.io/f/xwllzzly"
-    method="POST"
-    class="space-y-4 font-sans text-sm"
->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-            <label class="block font-pixel text-[10px] text-amber-300 mb-2">
-                NOMBRE DEL DOCENTE / REPRESENTANTE
-            </label>
-            <input
-                type="text"
-                name="nombre"
-                required
-                placeholder="Ej. Prof. María Gómez"
-                class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"
-            >
+    <div class="w-full max-w-2xl mx-auto bg-slate-900 border-2 border-slate-700 p-5 sm:p-8 shadow-xl">
+
+        <!-- Encabezado -->
+        <div class="text-center mb-8">
+            <h2 class="font-pixel text-sm sm:text-base text-amber-300 mb-3">
+                SOLICITUD DE INFORMACIÓN
+            </h2>
+
+            <p class="text-slate-400 text-sm leading-relaxed">
+                ¿Quieres llevar Guardianes del Planeta a tu institución?
+                Completa el siguiente formulario y nos pondremos en contacto contigo.
+            </p>
+
+            <div class="w-20 h-1 bg-amber-400 mx-auto mt-5"></div>
         </div>
 
-        <div>
-            <label class="block font-pixel text-[10px] text-amber-300 mb-2">
-                CORREO ELECTRÓNICO
-            </label>
-            <input
-                type="email"
-                name="email"
-                required
-                placeholder="ejemplo@escuela.edu"
-                class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"
-            >
-        </div>
+        <form id="formularioDocentes" action="https://formspree.io/f/xwllzzly" method="POST"
+            class="space-y-5 font-sans text-sm">
+
+            <!-- Nombre y correo -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                <div>
+                    <label class="block font-pixel text-[9px] text-amber-300 mb-2">
+                        NOMBRE DEL DOCENTE / REPRESENTANTE *
+                    </label>
+
+                    <input type="text" name="nombre" required placeholder="Ej. María Gómez"
+                        class="w-full bg-slate-950 border-2 border-slate-700 rounded-sm p-3 text-white placeholder-slate-500 focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block font-pixel text-[9px] text-amber-300 mb-2">
+                        CORREO ELECTRÓNICO *
+                    </label>
+
+                    <input type="email" name="email" required placeholder="ejemplo@escuela.edu"
+                        class="w-full bg-slate-950 border-2 border-slate-700 rounded-sm p-3 text-white placeholder-slate-500 focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition">
+                </div>
+
+            </div>
+
+            <!-- Institución y cantidad -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                <div>
+                    <label class="block font-pixel text-[9px] text-amber-300 mb-2">
+                        INSTITUCIÓN EDUCATIVA *
+                    </label>
+
+                    <input type="text" name="institucion" required placeholder="Nombre del colegio"
+                        class="w-full bg-slate-950 border-2 border-slate-700 rounded-sm p-3 text-white placeholder-slate-500 focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition">
+                </div>
+
+                <div>
+                    <label class="block font-pixel text-[9px] text-amber-300 mb-2">
+                        CANTIDAD DE ESTUDIANTES *
+                    </label>
+
+                    <select name="alumnos" required
+                        class="w-full bg-slate-950 border-2 border-slate-700 rounded-sm p-3 text-white focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="1 - 30 alumnos">1 - 30 alumnos</option>
+                        <option value="31 - 100 alumnos">31 - 100 alumnos</option>
+                        <option value="100+ alumnos">100+ alumnos</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Mensaje -->
+            <div>
+                <label class="block font-pixel text-[9px] text-amber-300 mb-2">
+                    MENSAJE ADICIONAL
+                </label>
+
+                <textarea name="mensaje" rows="4"
+                    placeholder="Cuéntanos si tienes alguna consulta o deseas más información..."
+                    class="w-full bg-slate-950 border-2 border-slate-700 rounded-sm p-3 text-white placeholder-slate-500 focus:border-amber-400 focus:ring-1 focus:ring-amber-400 outline-none transition resize-y"></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="Nueva solicitud de información - Guardianes del Planeta">
+
+            <!-- Nota -->
+            <p class="text-xs text-slate-500">
+                * Los campos marcados son obligatorios.
+            </p>
+
+            <!-- Botón -->
+            <button type="submit"
+                class="w-full bg-amber-400 hover:bg-amber-300 active:scale-[0.99] text-slate-950 font-pixel text-[10px] sm:text-xs py-4 px-5 transition-all duration-200 shadow-[0_4px_0_#92400e] hover:shadow-[0_2px_0_#92400e] hover:translate-y-[2px] cursor-pointer">
+                ENVIAR SOLICITUD
+            </button>
+
+            <p class="text-center text-[11px] text-slate-500">
+                ¡Gracias por tu interés en cuidar nuestro planeta!
+            </p>
+
+        </form>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-            <label class="block font-pixel text-[10px] text-amber-300 mb-2">
-                INSTITUCIÓN EDUCATIVA / COLEGIO
-            </label>
-            <input
-                type="text"
-                name="institucion"
-                required
-                placeholder="Ej. Colegio San Martín"
-                class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"
-            >
-        </div>
-
-        <div>
-            <label class="block font-pixel text-[10px] text-amber-300 mb-2">
-                CANTIDAD DE ESTUDIANTES
-            </label>
-            <select
-                name="alumnos"
-                required
-                class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"
-            >
-                <option value="1 - 30 alumnos">1 - 30 alumnos</option>
-                <option value="31 - 100 alumnos">31 - 100 alumnos</option>
-                <option value="100+ alumnos">100+ alumnos</option>
-            </select>
-        </div>
-    </div>
-
-    <div>
-        <label class="block font-pixel text-[10px] text-amber-300 mb-2">
-            MENSAJE ADICIONAL
-        </label>
-        <textarea
-            name="mensaje"
-            rows="4"
-            placeholder="Escribe tu mensaje..."
-            class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"
-        ></textarea>
-    </div>
-
-    <input
-        type="hidden"
-        name="_subject"
-        value="Nueva solicitud de información - Guardianes del Planeta"
-    >
-
-    <button
-        type="submit"
-        class="w-full bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold p-3 transition-colors cursor-pointer"
-    >
-        ENVIAR FORMULARIO
-    </button>
-</form>
 
 
     <!-- ODS 12 SECTION -->
@@ -373,13 +459,17 @@
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                     <div class="lg:col-span-8">
                         <span class="font-pixel text-xs text-amber-400">OBJETIVO DE DESARROLLO SOSTENIBLE 12</span>
-                        <h2 class="text-xl sm:text-3xl font-pixel text-white mt-2 mb-4">PRODUCCIÓN Y CONSUMO RESPONSIBLE</h2>
+                        <h2 class="text-xl sm:text-3xl font-pixel text-white mt-2 mb-4">PRODUCCIÓN Y CONSUMO RESPONSIBLE
+                        </h2>
                         <p class="text-slate-300 font-sans leading-relaxed text-base mb-4">
-                            Guardianes GDP integra el <strong>ODS 12</strong> transformando conceptos de reciclaje y hábitos responsables en un ecosistema ludificado estilo retro 16-bit. Enseñamos a niños a reducir desechos, reutilizar elementos cotidianos y optimizar recursos energéticos.
+                            Guardianes GDP integra el <strong>ODS 12</strong> transformando conceptos de reciclaje y
+                            hábitos responsables en un ecosistema ludificado estilo retro 16-bit. Enseñamos a niños a
+                            reducir desechos, reutilizar elementos cotidianos y optimizar recursos energéticos.
                         </p>
                     </div>
                     <div class="lg:col-span-4 text-center">
-                        <div class="w-28 h-28 mx-auto bg-amber-500 border-4 border-white flex items-center justify-center font-pixel text-3xl text-slate-950 shadow-[6px_6px_0px_#000]">
+                        <div
+                            class="w-28 h-28 mx-auto bg-amber-500 border-4 border-white flex items-center justify-center font-pixel text-3xl text-slate-950 shadow-[6px_6px_0px_#000]">
                             12
                         </div>
                         <p class="font-retro text-2xl text-amber-300 mt-3">CONSUMO SOSTENIBLE</p>
@@ -405,7 +495,8 @@
                         <span class="font-retro text-lg text-emerald-300">★ RECICLA </span>
                     </div>
                     <h3 class="font-pixel text-sm text-white mb-2">RECICLA CORRECTAMENTE</h3>
-                    <p class="text-slate-400 text-sm mb-4">Clasifica botellas, cartones y orgánicos en sus 4 contenedores correspondientes.</p>
+                    <p class="text-slate-400 text-sm mb-4">Clasifica botellas, cartones y orgánicos en sus 4
+                        contenedores correspondientes.</p>
                 </div>
 
                 <!-- Nivel 2 -->
@@ -415,7 +506,8 @@
                         <span class="font-retro text-lg text-teal-300">DECISIÓN RÁPIDA</span>
                     </div>
                     <h3 class="font-pixel text-sm text-white mb-2">CUIDA EL PLANETA</h3>
-                    <p class="text-slate-400 text-sm mb-4">Distingue entre hábitos positivos (ahorro de agua) y dañinos.</p>
+                    <p class="text-slate-400 text-sm mb-4">Distingue entre hábitos positivos (ahorro de agua) y dañinos.
+                    </p>
                 </div>
 
                 <!-- Nivel 3 -->
@@ -435,7 +527,8 @@
                         <span class="font-retro text-lg text-purple-300">UPCYCLING</span>
                     </div>
                     <h3 class="font-pixel text-sm text-white mb-2">SEGUNDA VIDA A RESIDUOS</h3>
-                    <p class="text-slate-400 text-sm mb-4">Taller creativo de transformación de botellas plásticas en macetas y juguetes.</p>
+                    <p class="text-slate-400 text-sm mb-4">Taller creativo de transformación de botellas plásticas en
+                        macetas y juguetes.</p>
                 </div>
 
                 <!-- Nivel 5 -->
@@ -445,7 +538,8 @@
                         <span class="font-retro text-lg text-amber-300">VOCABULARIO</span>
                     </div>
                     <h3 class="font-pixel text-sm text-white mb-2">ECO-PALABRAS</h3>
-                    <p class="text-slate-400 text-sm mb-4">Resuelve palabras cruzadas y acrostichos ecológicos como "BIODEGRADABLE".</p>
+                    <p class="text-slate-400 text-sm mb-4">Resuelve palabras cruzadas y acrostichos ecológicos como
+                        "BIODEGRADABLE".</p>
                 </div>
 
                 <!-- Nivel 6 -->
@@ -455,7 +549,8 @@
                         <span class="font-retro text-lg text-yellow-300">ENERGÍA VERDE</span>
                     </div>
                     <h3 class="font-pixel text-sm text-white mb-2">ENERGIZAR LA CASA ECO</h3>
-                    <p class="text-slate-400 text-sm mb-4">Responde preguntas de trivia para alimentar los paneles solares de la casa.</p>
+                    <p class="text-slate-400 text-sm mb-4">Responde preguntas de trivia para alimentar los paneles
+                        solares de la casa.</p>
                 </div>
             </div>
         </div>
@@ -465,17 +560,20 @@
     <section id="equipo" class="py-16 bg-slate-900 border-t-4 border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <span class="font-pixel text-xs text-emerald-400 bg-emerald-950 px-3 py-1 border border-emerald-600">DESARROLLADORES</span>
+                <span
+                    class="font-pixel text-xs text-emerald-400 bg-emerald-950 px-3 py-1 border border-emerald-600">DESARROLLADORES</span>
                 <h2 class="text-2xl sm:text-4xl font-pixel text-white mt-4 mb-2">EL EQUIPO DE GUARDIANES GDP</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Mujer 1 -->
                 <div class="pixel-card p-6 border-purple-500 text-center">
-                    <div class="w-24 h-24 mx-auto bg-purple-900 border-4 border-purple-400 flex items-center justify-center font-pixel text-4xl mb-4 shadow-[4px_4px_0px_#000]">
+                    <div
+                        class="w-24 h-24 mx-auto bg-purple-900 border-4 border-purple-400 flex items-center justify-center font-pixel text-4xl mb-4 shadow-[4px_4px_0px_#000]">
                         👩🏻‍🎨
                     </div>
-                    <span class="font-pixel text-[10px] text-purple-300 bg-purple-950 px-2 py-1">RELACIONES SOCIALES</span>
+                    <span class="font-pixel text-[10px] text-purple-300 bg-purple-950 px-2 py-1">RELACIONES
+                        SOCIALES</span>
                     <h3 class="font-pixel text-sm text-white mt-3 mb-1">ASHLEY VIVAS</h3>
                     <p class="font-retro text-lg text-slate-400 mb-3">Especialista en Marketing </p>
                     <p class="text-slate-300 text-xs leading-relaxed">Especialista en Marketing y Comunicación.</p>
@@ -483,24 +581,29 @@
 
                 <!-- Mujer 2 -->
                 <div class="pixel-card p-6 border-emerald-500 text-center">
-                    <div class="w-24 h-24 mx-auto bg-emerald-900 border-4 border-emerald-400 flex items-center justify-center font-pixel text-4xl mb-4 shadow-[4px_4px_0px_#000]">
+                    <div
+                        class="w-24 h-24 mx-auto bg-emerald-900 border-4 border-emerald-400 flex items-center justify-center font-pixel text-4xl mb-4 shadow-[4px_4px_0px_#000]">
                         👩🏽‍💻
                     </div>
                     <span class="font-pixel text-[10px] text-emerald-300 bg-emerald-950 px-2 py-1">LEAD GAME DEV</span>
                     <h3 class="font-pixel text-sm text-white mt-3 mb-1">SLILMA JUÁREZ</h3>
                     <p class="font-retro text-lg text-slate-400 mb-3">Programadora Principal</p>
-                    <p class="text-slate-300 text-xs leading-relaxed">Desarrolladora de jugabilidad, interfaz y lógica del juego.</p>
+                    <p class="text-slate-300 text-xs leading-relaxed">Desarrolladora de jugabilidad, interfaz y lógica
+                        del juego.</p>
                 </div>
 
                 <!-- Hombre 1 -->
                 <div class="pixel-card p-6 border-blue-500 text-center">
-                    <div class="w-24 h-24 mx-auto bg-blue-900 border-4 border-blue-400 flex items-center justify-center font-pixel text-4xl mb-4 shadow-[4px_4px_0px_#000]">
+                    <div
+                        class="w-24 h-24 mx-auto bg-blue-900 border-4 border-blue-400 flex items-center justify-center font-pixel text-4xl mb-4 shadow-[4px_4px_0px_#000]">
                         👨🏻‍🏫
                     </div>
-                    <span class="font-pixel text-[10px] text-blue-300 bg-blue-950 px-2 py-1">ARTE, ANIMACIÓN Y SONIDO</span>
+                    <span class="font-pixel text-[10px] text-blue-300 bg-blue-950 px-2 py-1">ARTE, ANIMACIÓN Y
+                        SONIDO</span>
                     <h3 class="font-pixel text-sm text-white mt-3 mb-1">BRANDON DOWNS</h3>
                     <p class="font-retro text-lg text-slate-400 mb-3">Diseñador de Arte y Animación</p>
-                    <p class="text-slate-300 text-xs leading-relaxed">Diseñador de personajes, entornos y animaciones para el juego.</p>
+                    <p class="text-slate-300 text-xs leading-relaxed">Diseñador de personajes, entornos y animaciones
+                        para el juego.</p>
                 </div>
             </div>
         </div>
@@ -638,7 +741,7 @@
 
         // Click Handler for Canvas Game
         if (canvas) {
-            canvas.addEventListener('click', function(e) {
+            canvas.addEventListener('click', function (e) {
                 const rect = canvas.getBoundingClientRect();
                 const scaleX = canvas.width / rect.width;
                 const scaleY = canvas.height / rect.height;
@@ -757,10 +860,11 @@
 
 
         // Start Canvas Engine on load
-        window.onload = function() {
+        window.onload = function () {
             initWastes();
             render();
         };
     </script>
 </body>
+
 </html>
