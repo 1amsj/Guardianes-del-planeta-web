@@ -273,32 +273,95 @@
     </section>
 
     <!-- FORMULARIO DE SOLICITUD DE DEMO COMPLETA -->
-<form action="https://formspree.io/f/xwllzzly" method="POST" class="space-y-4 font-sans text-sm">
+
+<form
+    action="https://formspree.io/f/xwllzzly"
+    method="POST"
+    class="space-y-4 font-sans text-sm"
+>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-            <label class="block font-pixel text-[10px] text-amber-300 mb-2">NOMBRE DEL DOCENTE / REPRESENTANTE</label>
-            <input type="text" name="nombre" required placeholder="Ej. Prof. María Gómez" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
+            <label class="block font-pixel text-[10px] text-amber-300 mb-2">
+                NOMBRE DEL DOCENTE / REPRESENTANTE
+            </label>
+            <input
+                type="text"
+                name="nombre"
+                required
+                placeholder="Ej. Prof. María Gómez"
+                class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"
+            >
         </div>
+
         <div>
-            <label class="block font-pixel text-[10px] text-amber-300 mb-2">CORREO ELECTRÓNICO</label>
-            <input type="email" name="email" required placeholder="ejemplo@escuela.edu" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
+            <label class="block font-pixel text-[10px] text-amber-300 mb-2">
+                CORREO ELECTRÓNICO
+            </label>
+            <input
+                type="email"
+                name="email"
+                required
+                placeholder="ejemplo@escuela.edu"
+                class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"
+            >
         </div>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-            <label class="block font-pixel text-[10px] text-amber-300 mb-2">INSTITUCIÓN EDUCATIVA / COLEGIO</label>
-            <input type="text" name="institucion" required placeholder="Ej. Colegio San Martín" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
+            <label class="block font-pixel text-[10px] text-amber-300 mb-2">
+                INSTITUCIÓN EDUCATIVA / COLEGIO
+            </label>
+            <input
+                type="text"
+                name="institucion"
+                required
+                placeholder="Ej. Colegio San Martín"
+                class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"
+            >
         </div>
+
         <div>
-            <label class="block font-pixel text-[10px] text-amber-300 mb-2">CANTIDAD DE ESTUDIANTES</label>
-            <select name="alumnos" class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none">
-                <option>1 - 30 alumnos</option>
-                <option>31 - 100 alumnos</option>
-                <option>100+ alumnos</option>
+            <label class="block font-pixel text-[10px] text-amber-300 mb-2">
+                CANTIDAD DE ESTUDIANTES
+            </label>
+            <select
+                name="alumnos"
+                required
+                class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"
+            >
+                <option value="1 - 30 alumnos">1 - 30 alumnos</option>
+                <option value="31 - 100 alumnos">31 - 100 alumnos</option>
+                <option value="100+ alumnos">100+ alumnos</option>
             </select>
         </div>
     </div>
+
+    <div>
+        <label class="block font-pixel text-[10px] text-amber-300 mb-2">
+            MENSAJE ADICIONAL
+        </label>
+        <textarea
+            name="mensaje"
+            rows="4"
+            placeholder="Escribe tu mensaje..."
+            class="w-full bg-slate-950 border-2 border-slate-700 p-3 text-white focus:border-amber-400 outline-none"
+        ></textarea>
+    </div>
+
+    <input
+        type="hidden"
+        name="_subject"
+        value="Nueva solicitud de información - Guardianes del Planeta"
+    >
+
+    <button
+        type="submit"
+        class="w-full bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold p-3 transition-colors cursor-pointer"
+    >
+        ENVIAR FORMULARIO
+    </button>
+</form>
 
     <div>
         <label class="block font-pixel text-[10px] text-amber-300 mb-2">MENSAJE O COMENTARIOS ADICIONALES</label>
